@@ -1,3 +1,5 @@
 isEmpty only returns true
 removeFront only returns false
 removeBack only returns false
+
+These cause other bugs like destructor not removing all nodes
