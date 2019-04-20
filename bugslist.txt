@@ -1,0 +1,3 @@
+isEmpty only returns true
+removeFront only returns false
+removeBack only returns false
