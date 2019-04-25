@@ -1,7 +1,8 @@
 The one bug that causes them all:
 isEmpty returns true in all circumstances
 
-This bug may have caused all other invalid operations in the linkedList. Without seeing the implementation it is impossible to deduce whether or not the other functions are implemented correctly.
+This bug may have caused all other invalid operations in the linkedList. Without seeing the implementation it is
+impossible to deduce whether or not the other functions are implemented correctly.
 
 Side effects of this bug:
 
