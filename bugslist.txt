@@ -1,5 +1,16 @@
-isEmpty only returns true
+The one bug that causes them all:
+isEmpty returns true in all circumstances
+
+This bug may have caused all other invalid operations in the linkedList. Without seeing the implementation it is impossible to deduce whether or not the other functions are implemented correctly.
+
+Side effects of this bug:
+
 removeFront only returns false
 removeBack only returns false
+-These can both be explained by having a return false clause at the top of each function if the list isEmpty
 
-These cause other bugs like destructor not removing all nodes
+addBack is identical to addFront
+-addBack(elem) may have been implemented to just return addFront(elem) if the list isEmpty
+
+destructor deletes no allocated memory
+-could have been coded to remove all elements unless the list isEmpty then do nothing
